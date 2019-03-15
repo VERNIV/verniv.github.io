@@ -5,7 +5,7 @@ body {
 }
 
 @media all and (orientation: landscape) {
-    #box {
+    #background {
         width: 100vw;
         height: 100vw;
         position: absolute;
@@ -33,10 +33,18 @@ body {
         border-bottom: 100vw solid #E3DECE;
         border-left: 100vw solid transparent;
     }
+
+    #box {
+        position: absolute;
+        width: 100vh;
+        height: 60vh;
+        top: 20vh;
+        left: calc((100vw - 100vh) / 2);
+    }
 }
 
 @media all and (orientation: portrait) {
-    #box {
+    #background {
         width: 100vw;
         height: 100vw;
         position: absolute;
@@ -63,5 +71,13 @@ body {
         left: 0;
         border-bottom: 100vh solid #E3DECE;
         border-left: 100vh solid transparent;
+    }
+
+    #box {
+        position: absolute;
+        width: 60vw;
+        height: 100vw;
+        top: calc((100vh - 100vw) / 2);
+        left: 20vh;
     }
 }
