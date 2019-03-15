@@ -78,6 +78,6 @@ body {
         width: 60vw;
         height: 100vw;
         top: calc((100vh - 100vw) / 2);
-        left: 20vh;
+        left: 20vw;
     }
 }
