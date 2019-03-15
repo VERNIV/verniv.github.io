@@ -20,17 +20,17 @@ body {
         height: 0;
         top: 0;
         left: 0;
-        border-top: 100vw solid #a64646;
+        border-top: 100vw solid #A64646;
         border-right: 100vw solid transparent;
     }
 
-    #white {
+    #light_grayish_orange {
         position: absolute;
         width: 0;
         height: 0;
         top: 0;
         left: 0;
-        border-bottom: 100vw solid #b1a2a2;
+        border-bottom: 100vw solid #E3DECE;
         border-left: 100vw solid transparent;
     }
 }
@@ -51,17 +51,17 @@ body {
         height: 0;
         top: 0;
         left: 0;
-        border-top: 100vh solid #a64646;
+        border-top: 100vh solid #A64646;
         border-right: 100vh solid transparent;
     }
 
-    #white {
+    #light_grayish_orange {
         position: absolute;
         width: 0;
         height: 0;
         top: 0;
         left: 0;
-        border-bottom: 100vh solid #b1a2a2;
+        border-bottom: 100vh solid #E3DECE;
         border-left: 100vh solid transparent;
     }
 }
