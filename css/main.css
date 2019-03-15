@@ -79,9 +79,9 @@ body {
 
     #box {
         position: absolute;
-        width: 60vw;
+        width: 84vw;
         height: 100vw;
         top: calc((100vh - 100vw) / 2);
-        left: 20vw;
+        left: 8vw;
     }
 }
