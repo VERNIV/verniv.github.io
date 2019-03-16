@@ -4,6 +4,7 @@ body {
     padding: 0;
     width: 100vw;
     height: 100vh;
+    position: relative;
     overflow: hidden;
 }
 
@@ -47,12 +48,19 @@ body {
 }
 
 @media all and (orientation: portrait) {
+
+    html,
+    body {
+        width: 100vw;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
     #background {
-        width: 100vh;
-        height: 100vh;
+        width: calc(var(--vh, 1vh) * 100);
+        height: calc(var(--vh, 1vh) * 100);
         position: absolute;
         top: 0;
-        left: calc(50vw - 50vh);
+        left: calc(50vw - calc(var(--vh, 1vh) * 50));
 
     }
 
@@ -62,8 +70,8 @@ body {
         height: 0;
         top: 0;
         left: 0;
-        border-top: 100vh solid #A64646;
-        border-right: 100vh solid transparent;
+        border-top: calc(var(--vh, 1vh) * 100) solid #A64646;
+        border-right: calc(var(--vh, 1vh) * 100) solid transparent;
     }
 
     #light_grayish_orange {
@@ -72,15 +80,15 @@ body {
         height: 0;
         top: 0;
         left: 0;
-        border-bottom: 100vh solid #E3DECE;
-        border-left: 100vh solid transparent;
+        border-bottom: calc(var(--vh, 1vh) * 100) solid #E3DECE;
+        border-left: calc(var(--vh, 1vh) * 100) solid transparent;
     }
 
     #box {
         position: absolute;
         width: 84vw;
         height: 100vw;
-        top: calc((100vh - 100vw) / 2);
+        top: calc((calc(var(--vh, 1vh) * 100) - 100vw) / 2);
         left: 8vw;
     }
 }
