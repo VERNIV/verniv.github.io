@@ -34,7 +34,7 @@ body {
         height: 0;
         top: 0;
         left: 0;
-        border-bottom: 100vw solid #E3DECE;
+        border-bottom: 100vw solid #EFDBB2;
         border-left: 100vw solid transparent;
     }
 
@@ -80,7 +80,7 @@ body {
         height: 0;
         top: 0;
         left: 0;
-        border-bottom: calc(var(--vh, 1vh) * 100) solid #E3DECE;
+        border-bottom: calc(var(--vh, 1vh) * 100) solid #EFDBB2;
         border-left: calc(var(--vh, 1vh) * 100) solid transparent;
     }
 
