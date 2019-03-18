@@ -125,5 +125,9 @@ body {
         bottom: 0;
         left: 0;
         right: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
     }
 }
