@@ -114,20 +114,17 @@ body {
         width: 84vw;
         height: auto;
         top: calc((calc(var(--vh, 1vh) * 30) - 30vw) / 2 + calc(var(--vh, 1vh) * 8));
-        bottom: calc((calc(var(--vh, 1vh) * 30) - 30vw) / 2 + calc(var(--vh, 1vh) * 8));
+        bottom: calc((calc(var(--vh, 1vh) * 30) - 30vw) / 2 + calc(var(--vh, 1vh) * 2));
         left: 8vw;
     }
 
     #box p {
         position: absolute;
-        width: auto;
-        height: 25vh;
-        bottom: 0;
+        width: 84vw;
+        max-height: calc(var(--vh, 1vh) * 45);
+        top: calc(calc(var(--vh, 1vh) * 30) - (calc(var(--vh, 1vh) * 30) - 30vw) / 2);
         left: 0;
         right: 0;
         overflow: hidden;
-        text-overflow: ellipsis;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
     }
 }
