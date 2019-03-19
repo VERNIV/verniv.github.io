@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/Raleway.woff2') format('woff2');
+}
+
 html,
 body {
     margin: 0;
@@ -6,6 +11,23 @@ body {
     height: 100vh;
     position: relative;
     overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway',
+        sans-serif;
+    font-weight: 300;
+}
+
+p {
+    font-family: 'Raleway',
+        sans-serif;
+    font-weight: 100;
 }
 
 @media all and (orientation: landscape) {
