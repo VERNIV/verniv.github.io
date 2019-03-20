@@ -1,16 +1,16 @@
 @font-face {
-    font-family: 'Raleway';
-    src: url('/fonts/Raleway.woff2') format('woff2');
+  font-family: "Raleway";
+  src: url("/fonts/Raleway.woff2") format("woff2");
 }
 
 html,
 body {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
 h1,
@@ -19,134 +19,133 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Raleway',
-        sans-serif;
-    font-weight: 300;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
 }
 
 p {
-    font-family: 'Raleway',
-        sans-serif;
-    font-weight: 100;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
 }
 
 @media all and (orientation: landscape) {
-    #background {
-        width: 100vw;
-        height: 100vw;
-        position: absolute;
-        top: calc(50vh - 50vw);
-        left: 0;
+  #background {
+    width: 100vw;
+    height: 100vw;
+    position: absolute;
+    top: calc(50vh - 50vw);
+    left: 0;
+  }
 
-    }
+  #dull_red_r {
+    position: absolute;
+    width: 20vw;
+    height: 100vw;
+    top: 0;
+    left: 0;
+    background-color: #a64646;
+  }
 
-    #dull_red_r {
-        position: absolute;
-        width: 20vw;
-        height: 100vw;
-        top: 0;
-        left: 0;
-        background-color: #A64646;
-    }
+  #dull_red_t {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 20vw;
+    border-top: 100vw solid #a64646;
+    border-right: 30vw solid transparent;
+  }
 
-    #dull_red_t {
-        position: absolute;
-        width: 0;
-        height: 0;
-        top: 0;
-        left: 20vw;
-        border-top: 100vw solid #A64646;
-        border-right: 30vw solid transparent;
-    }
+  #light_grayish_orange {
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    top: 0;
+    left: 0;
+    background-color: #efdbb2;
+  }
 
-    #light_grayish_orange {
-        position: absolute;
-        width: 100vw;
-        height: 100vw;
-        top: 0;
-        left: 0;
-        background-color: #EFDBB2;
-    }
+  #box {
+    position: absolute;
+    width: auto;
+    height: 60vh;
+    top: 20vh;
+    left: calc((30vw - 30vh) / 2 + 20vw);
+    right: calc((30vw - 30vh) / 2 + 20vw);
+  }
 
-    #box {
-        position: absolute;
-        width: auto;
-        height: 60vh;
-        top: 20vh;
-        left: calc((30vw - 30vh) / 2 + 20vw);
-        right: calc((30vw - 30vh) / 2 + 20vw);
-    }
-
-    #box p {
-        position: absolute;
-        width: 20vw;
-        height: 45vh;
-        bottom: 0;
-        right: 0;
-    }
+  #box p {
+    position: absolute;
+    width: 20vw;
+    height: 45vh;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 @media all and (orientation: portrait) {
+  html,
+  body {
+    width: 100vw;
+    height: calc(var(--vh, 1vh) * 100);
+  }
 
-    html,
-    body {
-        width: 100vw;
-        height: calc(var(--vh, 1vh) * 100);
-    }
+  #background {
+    width: calc(var(--vh, 1vh) * 100);
+    height: calc(var(--vh, 1vh) * 100);
+    position: absolute;
+    top: 0;
+    left: calc(50vw - calc(var(--vh, 1vh) * 50));
+  }
 
-    #background {
-        width: calc(var(--vh, 1vh) * 100);
-        height: calc(var(--vh, 1vh) * 100);
-        position: absolute;
-        top: 0;
-        left: calc(50vw - calc(var(--vh, 1vh) * 50));
+  #dull_red_r {
+    position: absolute;
+    width: calc(var(--vh, 1vh) * 100);
+    height: calc(var(--vh, 1vh) * 4);
+    top: 0;
+    left: 0;
+    background-color: #a64646;
+  }
 
-    }
+  #dull_red_t {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: calc(var(--vh, 1vh) * 4);
+    left: 0;
+    border-top: calc(var(--vh, 1vh) * 30) solid #a64646;
+    border-right: calc(var(--vh, 1vh) * 100) solid transparent;
+  }
 
-    #dull_red_r {
-        position: absolute;
-        width: calc(var(--vh, 1vh) * 100);
-        height: calc(var(--vh, 1vh) * 8);
-        top: 0;
-        left: 0;
-        background-color: #A64646;
-    }
+  #light_grayish_orange {
+    position: absolute;
+    width: calc(var(--vh, 1vh) * 100);
+    height: calc(var(--vh, 1vh) * 100);
+    top: 0;
+    left: 0;
+    background-color: #efdbb2;
+  }
 
-    #dull_red_t {
-        position: absolute;
-        width: 0;
-        height: 0;
-        top: calc(var(--vh, 1vh) * 8);
-        left: 0;
-        border-top: calc(var(--vh, 1vh) * 30) solid #A64646;
-        border-right: calc(var(--vh, 1vh) * 100) solid transparent;
-    }
+  #box {
+    position: absolute;
+    width: 84vw;
+    height: auto;
+    top: calc(var(--vh, 1vh) * 4);
+    bottom: calc(
+      (calc(var(--vh, 1vh) * 30) - 30vw) / 2 + calc(var(--vh, 1vh) * 2)
+    );
+    left: 8vw;
+  }
 
-    #light_grayish_orange {
-        position: absolute;
-        width: calc(var(--vh, 1vh) * 100);
-        height: calc(var(--vh, 1vh) * 100);
-        top: 0;
-        left: 0;
-        background-color: #EFDBB2;
-    }
-
-    #box {
-        position: absolute;
-        width: 84vw;
-        height: auto;
-        top: calc((calc(var(--vh, 1vh) * 30) - 30vw) / 2 + calc(var(--vh, 1vh) * 8));
-        bottom: calc((calc(var(--vh, 1vh) * 30) - 30vw) / 2 + calc(var(--vh, 1vh) * 2));
-        left: 8vw;
-    }
-
-    #box p {
-        position: absolute;
-        width: 84vw;
-        max-height: calc(var(--vh, 1vh) * 45);
-        top: calc(calc(var(--vh, 1vh) * 30) - (calc(var(--vh, 1vh) * 30) - 30vw) / 2);
-        left: 0;
-        right: 0;
-        overflow: hidden;
-    }
+  #box p {
+    position: absolute;
+    width: 84vw;
+    max-height: calc(var(--vh, 1vh) * 45);
+    top: calc(
+      calc(var(--vh, 1vh) * 30) - (calc(var(--vh, 1vh) * 30) - 30vw) / 2
+    );
+    left: 0;
+    right: 0;
+    overflow: hidden;
+  }
 }
