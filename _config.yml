@@ -20,7 +20,7 @@
 
 title: VERNIV
 email: web@verniv.io
-description: >-
+description: >- # this means to ignore newlines until "baseurl:"
   VERNIV
 baseurl: ""
 url: "https://verniv.io"
@@ -31,8 +31,14 @@ markdown: kramdown
 collections:
   notices:
     output: true
+    permalink: /:collection/:title
 
-permalink: /:collection/:title
+defaults:
+  - 
+    scope:
+      path: ""
+    values:
+      layout: default
 
 # Build settings
 plugins:
