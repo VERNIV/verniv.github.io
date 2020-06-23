@@ -32,7 +32,7 @@ collections:
   notices:
     output: true
 
-permalink: /:collection/:name
+permalink: /:collection/:title
 
 # Build settings
 plugins:
