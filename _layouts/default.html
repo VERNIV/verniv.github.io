@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <script async src="/js/main.js"></script>
+
+    <link rel="stylesheet" href="https://use.typekit.net/hev5qxu.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <div id="background">
+        <div id="light_grayish_orange"></div>
+        <div id="dull_red_r"></div>
+        <div id="dull_red_t"></div>
+    </div>
+    <div id="box">
+        <h1 style="color: #EFDBB2;">VERNIV</h1>
+        <div id="content">
+            {% if page.title %}
+            <h3>{{ page.title }}&emsp;<span style="font-size: 0.6em;">{{ page.date | date_to_string }}</span></h3>
+            {% endif %}
+            {{ content }}
+        </div>
+    </div>
+</body>
+
+</html>

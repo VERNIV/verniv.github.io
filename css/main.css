@@ -71,7 +71,7 @@ p {
     right: calc((30vw - 30vh) / 2 + 20vw);
   }
 
-  #box p {
+  #content {
     position: absolute;
     width: 20vw;
     height: 45vh;
@@ -134,7 +134,7 @@ p {
     left: 8vw;
   }
 
-  #box p {
+  #content {
     position: absolute;
     width: 84vw;
     max-height: calc(var(--vh, 1vh) * 45);
