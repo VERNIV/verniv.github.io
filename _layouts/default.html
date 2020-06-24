@@ -20,12 +20,14 @@
         <div id="dull_red_t"></div>
     </div>
     <div id="box">
-        <h1 style="color: #EFDBB2;">VERNIV</h1>
-        <div id="content">
-            {% if page.title %}
-            <h3>{{ page.title }}&emsp;<span style="font-size: 0.6em;">{{ page.date | date_to_string }}</span></h3>
-            {% endif %}
-            {{ content }}
+        <h1 style="position: absolute; color: #EFDBB2;">VERNIV</h1>
+        <div id="container">
+            <div id="content">
+                {% if page.title %}
+                <h3>{{ page.title }}&emsp;<span style="font-size: 0.6em;">{{ page.date | date_to_string }}</span></h3>
+                {% endif %}
+                {{ content }}
+            </div>
         </div>
     </div>
 </body>
