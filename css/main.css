@@ -73,9 +73,10 @@ p {
 
   #content {
     position: absolute;
-    width: 20vw;
+    width: 30vw;
     height: 45vh;
-    bottom: 0;
+    /* bottom: 0; */
+    top: 3vh;
     right: 0;
   }
 }
