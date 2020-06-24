@@ -25,6 +25,10 @@ p {
   font-weight: 100;
 }
 
+.brand {
+  z-index: 910;
+}
+
 @media all and (orientation: landscape) {
   #background {
     width: 100vw;
