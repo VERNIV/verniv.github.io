@@ -25,9 +25,9 @@ p {
   font-weight: 100;
 }
 
-#dull_red_r,
-#dull_red_t {
-  z-index: 333;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .brand {
@@ -138,6 +138,11 @@ p {
     background-color: #efdbb2;
   }
 
+  #dull_red_r,
+  #dull_red_t {
+    z-index: 333;
+  }
+
   #box {
     position: absolute;
     width: 84vw;
@@ -165,4 +170,13 @@ p {
     text-align: end;
     padding-right: 2px;
   }
+}
+
+#box h1,
+#box h2,
+#box h3,
+#box h4,
+#box h5,
+#box h6 {
+  white-space: initial;
 }

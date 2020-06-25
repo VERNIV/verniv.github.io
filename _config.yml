@@ -49,7 +49,7 @@ autopages:
   collections:
     layouts: 
       - 'paginate.html'
-    title: 'Posts in collection :coll' # :coll is replaced by the collection name
+    title: ':coll' # :coll is replaced by the collection name
     permalink: '/:coll'
     slugify:
       mode: 'default'   # :coll is slugified.
