@@ -25,6 +25,11 @@ p {
   font-weight: 100;
 }
 
+#dull_red_r,
+#dull_red_t {
+  z-index: 333;
+}
+
 .brand {
   z-index: 910;
 }
@@ -82,6 +87,7 @@ p {
     /* bottom: 0; */
     top: 5vh;
     right: 0;
+    overflow-y: scroll;
   }
 
   #content {
@@ -136,9 +142,9 @@ p {
     position: absolute;
     width: 84vw;
     height: auto;
-    top: calc(var(--vh, 1vh) * 4);
+    top: calc(var(--vh, 1vh) * 2);
     bottom: calc(
-      (calc(var(--vh, 1vh) * 30) - 30vw) / 2 + calc(var(--vh, 1vh) * 2)
+      (calc(var(--vh, 1vh) * 15) - 15vw) / 2
     );
     left: 8vw;
   }
@@ -153,5 +159,10 @@ p {
     margin-top: calc(
       calc(var(--vh, 1vh) * 30) - (calc(var(--vh, 1vh) * 30) - 30vw) / 2
     );
+  }
+
+  #content-title {
+    text-align: end;
+    padding-right: 2px;
   }
 }

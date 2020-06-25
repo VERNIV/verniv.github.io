@@ -40,9 +40,40 @@ defaults:
     values:
       layout: default
 
+autopages:
+
+  # Site-wide kill switch, disable here and it doesn't run at all 
+  enabled: true
+
+  # Collection pages, omit to disable
+  collections:
+    layouts: 
+      - 'paginate.html'
+    title: 'Posts in collection :coll' # :coll is replaced by the collection name
+    permalink: '/:coll'
+    slugify:
+      mode: 'default'   # :coll is slugified.
+      case: false
+
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 3
+  permalink: '/:num/'
+  title: ':title | :num of :max'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+ # extension: htm
+ # indexpage: 'default'
+  trail: 
+    before: 2
+    after: 2
+
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-paginate-v2
 
 # Exclude from processing.
 # The following items will not be processed, by default.
