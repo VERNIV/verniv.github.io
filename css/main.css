@@ -32,6 +32,7 @@ a {
 
 .brand {
   z-index: 910;
+  color: #EFDBB2;
 }
 
 @media all and (orientation: landscape) {
