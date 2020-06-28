@@ -1,3 +1,7 @@
+---
+---
+
+
 html,
 body {
   margin: 0;
@@ -30,9 +34,20 @@ a {
   color: inherit;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 .brand {
   z-index: 910;
+  position: absolute;
   color: #EFDBB2;
+}
+
+#dull_red_r,
+#dull_red_t {
+  pointer-events: none;
 }
 
 @media all and (orientation: landscape) {
@@ -144,6 +159,15 @@ a {
     z-index: 333;
   }
 
+  #menu li {
+    display: inline;
+
+    h3 {
+      display: inline;
+      margin-right: 10px;
+    }
+  }
+
   #box {
     position: absolute;
     width: 84vw;
@@ -167,7 +191,7 @@ a {
     );
   }
 
-  #content-title {
+  .content-title {
     text-align: end;
     padding-right: 2px;
   }

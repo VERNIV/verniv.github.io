@@ -20,15 +20,21 @@
         <div id="dull_red_t"></div>
     </div>
     <div id="box">
-        <div style="position: absolute;">
-            <h1 class="brand">VERNIV</h1>
-            <h3 class="brand"><a href="/">HOME</a></h3>
-            <h3 class="brand"><a href="/notices">IR</a></h3>
+        <div class="brand">
+            <h1>VERNIV</h1>
+            <ul id="menu">
+                <li>
+                    <h3><a href="/">HOME</a></h3>
+                </li>
+                <li>
+                    <h3><a href="/notices">IR</a></h3>
+                </li>
+            </ul>
         </div>
         <div id="container">
             <div id="content">
                 {% if page.title %}
-                <h3 id="content-title">{{ page.title }}&emsp;<span
+                <h3 class="content-title">{{ page.title }}&emsp;<span
                         style="font-size: 0.6em;">{{ page.date | date_to_string }}</span></h3>
                 {% endif %}
                 {{ content }}
