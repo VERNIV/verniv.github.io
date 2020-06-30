@@ -40,7 +40,7 @@ class Content extends React.Component {
                                 <a href={target.url}>
                                     <h3 className="content-title">{target.title}&emsp;<span
                                         className="content-date">{target.date}</span></h3>
-                                    <p>{target.preview}</p>
+                                    <p className="preview">{target.preview}</p>
                                 </a>
                             </li>
 

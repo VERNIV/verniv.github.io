@@ -11,7 +11,7 @@ data.push({
     title: "{{ ir.title }}",
     date: "{{ ir.date | date_to_string }}",
     url: "{{ ir.url }}",
-    preview: `{{ ir.content | markdownify | strip_html | truncate: 50 }}`,
+    preview: `{{ ir.content | markdownify | strip_html }}`,
     content: /*#__PURE__*/React.createElement("div", null, `{{ ir.content | markdownify }}`)
 });
 {% endfor %}
