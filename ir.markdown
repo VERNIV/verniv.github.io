@@ -3,9 +3,7 @@
 <script>
 'use strict';
 
-const PAGE_LIMIT = 5;
-
-const data = [];
+const mode = 'ir';
 
 {% assign sorted = site.ir | reverse %}
 {% for ir in sorted %}

@@ -2,13 +2,13 @@
 
 class Content extends React.Component {
     state = {
-        page: Math.min(parseInt(document.cookie.replace(/(?:(?:^|.*;\s*)page\s*\=\s*([^;]*).*$)|^.*$/, "$1")) || 0, Math.ceil(data.length / PAGE_LIMIT) - 1),
+        page: Math.min(parseInt(document.cookie.replace(new RegExp(`(?:(?:^|.*;\\s*)${mode}\\s*\\=\\s*([^;]*).*$)|^.*$`), "$1")) || 0, Math.ceil(data.length / PAGE_LIMIT) - 1),
         target: null
     };
 
     handleChangePage = (event, page) => {
         this.setState({ page });
-        document.cookie = `page=${page}`;
+        document.cookie = `${mode}=${page}`;
     };
 
     showDetail = (target) => {
