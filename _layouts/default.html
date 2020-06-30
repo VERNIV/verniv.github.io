@@ -7,7 +7,11 @@
     <meta content="yes" name="apple-mobile-web-app-capable" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
-    <script async src="/js/main.js"></script>
+    <script src="/js/react.production.min.js"></script>
+    <script src="/js/react-dom.production.min.js"></script>
+    <script src="/js/material-ui.production.min.js"></script>
+
+    <script async src="/js/main.min.js"></script>
 
     <link rel="stylesheet" href="https://use.typekit.net/hev5qxu.css">
     <link rel="stylesheet" href="/css/main.css">
@@ -27,7 +31,7 @@
                     <h3><a href="/">HOME</a></h3>
                 </li>
                 <li>
-                    <h3><a href="/notices">IR</a></h3>
+                    <h3><a href="/ir">IR</a></h3>
                 </li>
             </ul>
         </div>
@@ -35,7 +39,7 @@
             <div id="content">
                 {% if page.title %}
                 <h3 class="content-title">{{ page.title }}&emsp;<span
-                        style="font-size: 0.6em;">{{ page.date | date_to_string }}</span></h3>
+                        class="content-date">{{ page.date | date_to_string }}</span></h3>
                 {% endif %}
                 {{ content }}
             </div>

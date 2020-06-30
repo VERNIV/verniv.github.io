@@ -39,6 +39,10 @@ ul {
   padding: 0;
 }
 
+.list {
+  padding-bottom: 1px;
+}
+
 .brand {
   z-index: 910;
   position: absolute;
@@ -195,6 +199,10 @@ ul {
     text-align: end;
     padding-right: 2px;
   }
+}
+
+.content-date {
+  font-size: 0.6em;
 }
 
 #box h1,

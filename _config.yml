@@ -29,7 +29,7 @@ github_username: verniv
 markdown: kramdown
 
 collections:
-  notices:
+  ir:
     output: true
     permalink: /:collection/:title
     sort_by: date
