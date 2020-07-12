@@ -12,6 +12,10 @@ body {
   overflow: hidden;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 h1,
 h2,
 h3,
