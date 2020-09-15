@@ -1,0 +1,8 @@
+{
+    "name": "VERNIV",
+    "theme_color": "#a64646",
+    "background_color": "#a64646",
+    "display": "standalone",
+    "orientation": "portrait",
+    "start_url": "/"
+}
