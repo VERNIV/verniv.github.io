@@ -13,3 +13,7 @@ setVH();
 window.addEventListener('resize', () => {
     setVH();
 });
+
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/js/worker.min.js').then(() => { });
+}
