@@ -15,5 +15,5 @@ window.addEventListener('resize', () => {
 });
 
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/js/worker.min.js', { scope: '/' }).then(() => { });
+    navigator.serviceWorker.register('/worker.min.js', {}).then(() => { });
 }
